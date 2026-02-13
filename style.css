@@ -1,0 +1,7 @@
+body {
+    font-family: monospace;
+}
+
+#dailyGoals {
+    white-space: pre;
+}
