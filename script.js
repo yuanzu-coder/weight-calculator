@@ -9,7 +9,8 @@ function checkEmpty(values, errors) {
 }
 function checkNumber(values, errors) {
     for(const v of values) {
-        if(isNaN(Number(v))) {
+        const n = Number(v);
+        if(Number.isNaN(n)) {
             errors.push("すべて数値で入力してください");
             break;
         }
@@ -113,17 +114,17 @@ function printUI01() {
 
         <p>
             現在の体重 [kg]：
-            <input type="number" id="currentWeight">
+            <input type="text" id="currentWeight">
         </p>
 
         <p>
             目標体重 [kg]：
-            <input type="number" id="goalWeight">
+            <input type="text" id="goalWeight">
         </p>
 
         <p>
             １日あたりの減量率 [%]：
-            <input type="number" id="reduceRatio">
+            <input type="text" id="reduceRatio">
         </p>
 
         <button onclick="calc01()">計算する</button>
@@ -188,17 +189,17 @@ function printUI02() {
 
         <p>
             現在の体重 [kg]：
-            <input type="number" id="currentWeight">
+            <input type="text" id="currentWeight">
         </p>
 
         <p>
             １日あたりの減量率 [%]：
-            <input type="number" id="reduceRatio">
+            <input type="text" id="reduceRatio">
         </p>
 
         <p>
             減量期間 [日]：
-            <input type="number" id="numberDays">
+            <input type="text" id="numberDays">
         </p>
 
         <button onclick="calc02()">計算する</button>
@@ -267,17 +268,17 @@ function printUI03() {
 
         <p>
             現在の体重 [kg]：
-            <input type="number" id="currentWeight">
+            <input type="text" id="currentWeight">
         </p>
 
         <p>
             目標体重 [kg]：
-            <input type="number" id="goalWeight">
+            <input type="text" id="goalWeight">
         </p>
 
         <p>
             減量期間 [日]：
-            <input type="number" id="numberDays">
+            <input type="text" id="numberDays">
         </p>
 
         <button onclick="calc03()">計算する</button>

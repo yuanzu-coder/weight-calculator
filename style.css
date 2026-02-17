@@ -1,7 +1,26 @@
+/*共通スタイル*/
 body {
     font-family: monospace;
 }
 
 #dailyGoals {
     white-space: pre;
+}
+
+/*スマホ用スタイル*/
+@media (max-width: 600px){
+    button {
+        padding: 16px 20px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    input {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    body {
+        font-size: 18px;
+    }
 }
