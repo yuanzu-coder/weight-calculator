@@ -110,7 +110,7 @@ function printUI01() {
     const ui = document.getElementById("UI");
     
     ui.innerHTML = `
-        <h2  class = calcTytle>目標達成までにかかる日数を計算します</h2>
+        <h2  class ="calcTytle">目標達成までにかかる日数を計算します</h2>
 
         <p>
             現在の体重 [kg]：
@@ -185,7 +185,7 @@ function printUI02() {
     const ui = document.getElementById("UI");
 
     ui.innerHTML = `
-        <h2 class = calcTytle>減量後の体重[kg]を計算します</h2>
+        <h2 class ="calcTytle">減量後の体重[kg]を計算します</h2>
 
         <p>
             現在の体重 [kg]：
@@ -264,7 +264,7 @@ function printUI03() {
     const ui = document.getElementById("UI");
     
     ui.innerHTML = `
-        <h2 class = calcTytle>１日あたりの減量率[%]を計算します</h2>
+        <h2 class ="calcTytle">１日あたりの減量率[%]を計算します</h2>
 
         <p>
             現在の体重 [kg]：
