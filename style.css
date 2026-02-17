@@ -23,4 +23,8 @@ body {
     body {
         font-size: 18px;
     }
+
+    h2 {
+        font-size: 12px;
+    }
 }
