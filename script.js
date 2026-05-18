@@ -178,6 +178,8 @@ function calc01() {
 
     const dailyGoals = document.getElementById("dailyGoals")
     dailyGoals.innerHTML = makeDailyGoals(currentWeight, goalWeight, reduceRatio, numberDays).join("\n");
+
+    return;
 }
 
 //最終体重計算モード
